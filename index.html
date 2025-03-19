@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMA Kristen Satya Wacana</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <div>
+                <img style="width: 70px; height: 70px;" src="./assets/images-removebg-preview.png" alt="Logo SMA Kristen Satya Wacana">
+            </div>
+            <div>
+                <h1 style="padding-left:20px ;">SMA Kristen Satya Wacana</h1>
+            </div> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#pendaftaran">Pendaftaran</a></li>
+                <li><a href="#kegiatan">Kegiatan</a></li>
+                <li><a href="#prestasi">Prestasi</a></li>
+            </ul>
+        </nav>
+     </header>   
+    
+
+    <!-- Banner Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Selamat Datang di SMA Kristen Satya Wacana</h2>
+            <p>Menjadi sekolah pilihan untuk pendidikan berkualitas dengan karakter yang kuat.</p>
+            <a href="#pendaftaran" class="cta-btn">Daftar Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Profil Sekolah -->
+    <section id="profil" class="section">
+        <h2>Profil Sekolah</h2>
+        <p>SMA Kristen Satya Wacana adalah lembaga pendidikan formal yang berfokus pada pengembangan bakat dan kreativitas siswa. Sekolah melibatkan misi untuk menyediakan pendidikan yang holistik dan inklusif, mendorong keberagaman, dan mendukung siswa dari berbagai latar belakang untuk mencapai potensi mereka. Pendekatan pembelajaran di sekolah melibatkan metode inovatif dan interaktif yang memfasilitasi ekspresi diri, pemikiran kritis, dan kolaborasi. Sekolah ini memberikan perhatian khusus pada seni, teknologi, dan keterampilan praktis lainnya yang relevan dengan kebutuhan dunia modern. Atas dasar ini sekolah menetapkan branding nya dengan nama Creative Minority School.
+
+            Creative Minority School diartikan sebagai “Sekolah Minoritas Kreatif”. Sekolah yang menekankan pendidikan yang berfokus pada kreativitas, inovasi, dan juga merujuk pada sekolah yang melayani kelompok minoritas dalam masyarakat.</p>
+    </section>
+
+    <!-- Formulir Pendaftaran -->
+    <section id="pendaftaran" class="section">
+        <h2>Proses Pendaftaran</h2>
+        <p>Pendaftaran siswa baru dapat dilakukan melalui formulir di bawah ini:</p>
+        <form id="formPendaftaran">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" required><br><br>
+
+            <label for="tglLahir">Tanggal Lahir:</label>
+            <input type="date" id="tglLahir" name="tglLahir" required><br><br>
+
+            <label for="alamat">Alamat:</label>
+            <textarea id="alamat" name="alamat" required></textarea><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="telepon">Nomor Telepon:</label>
+            <input type="tel" id="telepon" name="telepon" required><br><br>
+
+            <label for="program">Program Pilihan:</label>
+            <select id="program" name="program">
+                <option value="ipa">IPA</option>
+                <option value="ips">IPS</option>
+            </select><br><br>
+
+            <input type="submit" value="Daftar">
+        </form>
+        <p id="pesan"></p>
+    </section>
+
+    <!-- Kalender Kegiatan -->
+    <section id="kegiatan" class="section">
+        <h2>Kalender Kegiatan</h2>
+        <div id="calendar"></div>
+    </section>
+
+    <!-- Prestasi Sekolah -->
+    <section id="prestasi" class="section">
+        <h2>Prestasi Sekolah</h2>
+        <ul>
+            <li>Juara 1 Lomba Futsal Tingkat Kota</li>
+            <li>Tim Debat Siswa Mendapatkan Penghargaan Nasional</li>
+            <li>Kejuaraan Seni Musik dalam Kompetisi Tingkat Provinsi</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 SMA Kristen Satya Wacana | Kontak: info@skw.sch.id</p>
+        <div class="socials">
+            <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.2.0/dist/fullcalendar.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
